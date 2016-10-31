@@ -10,9 +10,9 @@ using namespace std;
 class Movie {
 private:
     string title;
-    enum fsk : short fsk;
+    fsk fsk_;
 public:
-    Movie(string t, enum fsk f) : title(t), fsk(f) { }
+    Movie(string t, enum fsk f) : title(t), fsk_(f) { }
 
     string getTitle() const { return title; }
 
